@@ -1,0 +1,264 @@
+// src/components/AboutSection.js
+import React from 'react';
+import './Sustainability.css';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaWhatsapp, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+const Sustainability = () => {
+
+  const features = [
+  {
+    icon: '🌙',
+    title: '100% Biodegradable',
+    description: 'Jute naturally decomposes without releasing harmful substances into the environment.'
+  },
+  {
+    icon: '🌿',
+    title: 'Carbon Negative',
+    description: 'Jute plants absorb more carbon dioxide than they produce during cultivation.'
+  },
+  {
+    icon: '💧',
+    title: 'Water Efficient',
+    description: 'Jute requires minimal irrigation compared to other crops, reducing water usage.'
+  },
+  {
+    icon: '🔁',
+    title: 'Renewable Resource',
+    description: 'Jute is fast-growing and can be harvested multiple times per year.'
+  },
+  {
+    icon: '🧪',
+    title: 'Low Chemical Usage',
+    description: 'Jute farming requires minimal pesticides and fertilizers compared to conventional crops.'
+  },
+  {
+    icon: '👨‍🌾',
+    title: 'Supports Livelihoods',
+    description: 'Jute farming and processing provides income for millions of people in rural communities.'
+  }
+];
+
+const practices = [
+  {
+    number: '1',
+    title: 'Zero Plastic Packaging',
+    description: 'All our products are shipped in plastic-free packaging materials.',
+  },
+  {
+    number: '2',
+    title: 'Waste Reduction',
+    description: 'We repurpose jute scraps into smaller products to minimize waste.',
+  },
+  {
+    number: '3',
+    title: 'Water Conservation',
+    description: 'Our production processes are designed to minimize water usage.',
+  },
+  {
+    number: '4',
+    title: 'Natural Dyes',
+    description: 'When coloring is needed, we use plant-based, non-toxic dyes.',
+  },
+  {
+    number: '5',
+    title: 'Carbon Offset Shipping',
+    description: 'We offset the carbon footprint of our shipping operations.',
+  },
+  {
+    number: '6',
+    title: 'Local Sourcing',
+    description: 'We prioritize sourcing raw materials from nearby regions to reduce transportation emissions.',
+  },
+];
+  return (
+<div>
+          <div className="top-bar">
+            <div className="contact-info">
+              <span>+91 98220 91610 / +968 91116 172</span>
+              <span>goldenfiberbyrayna@gmail.com</span>
+            </div>
+            <div className="social-icons">
+              <FaFacebookF />
+              <FaTwitter />
+              <FaLinkedinIn />
+              <FaInstagram />
+              <FaWhatsapp />
+            </div>
+          </div>
+
+                <div className="main-nav">
+                  <div className="logo">
+                    <img src="/goldenfiberlogo.png" alt="goldenfiberlogo" />
+                  </div>
+                  <nav className="nav-links">
+                    <Link to = "/">HOME</Link>
+                    <Link to = "/about">ABOUT</Link>
+                    <Link to = "/product">PRODUCT</Link>
+                    <Link to = "/sustainability">SUSTAINABILITY</Link>
+                    <Link to = "/testimonials">TESTIMONIALS</Link>
+                    <Link to = "/contact">CONTACT</Link>
+          
+                  </nav>
+                  <Link to= "/contact">
+                  <button className="enquire-btn">ENQUIRE NOW</button>
+                  </Link>
+                </div>
+
+               <section className="sustainability-section">
+      <div className="sustainability-content">
+        <h2 className="sustainability-title">Our Sustainability Commitment</h2>
+        <p className="sustainability-subtext">
+          Discover why jute is the eco-friendly alternative we're passionate about.
+        </p>
+      </div>
+    </section>
+
+
+ <section className="why-container">
+      <p className="why-subtitle">The Golden Fiber</p>
+      <h2 className="why-title">Why Choose Jute?</h2>
+      <p className="why-desc">
+        Jute isn’t just a material—it’s a sustainable solution to our plastic problem. Here's why this
+        remarkable fiber is the cornerstone of our business.
+      </p>
+
+      <div className="features-grid">
+        {features.map((feature, index) => (
+          <div className="feature-card" key={index}>
+            <div className="feature-icon">{feature.icon}</div>
+            <h3 className="feature-title">{feature.title}</h3>
+            <p className="feature-desc">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+    
+
+    <div className="eco-container">
+      <div className="eco-text">
+        <p className="eco-subtitle">Our Transition</p>
+        <h1 className="eco-title">The Eco Journey</h1>
+        <p className="eco-paragraph">
+          Our sustainability journey began when we noticed the amount of plastic waste
+          generated by packaging in the jewelry business. We started exploring alternatives
+          and discovered jute—a traditional fiber with remarkable environmental benefits.
+        </p>
+        <p className="eco-paragraph">
+          What started as a small experiment quickly evolved into a passionate commitment to
+          provide sustainable alternatives to everyday products. We learned about the
+          environmental impact of conventional materials and witnessed firsthand how
+          switching to jute could make a significant difference.
+        </p>
+        <p className="eco-paragraph">
+          Today, we continue to innovate and expand our range of jute products, always with
+          sustainability at the heart of every decision we make.
+        </p>
+      </div>
+      <div className="eco-image">
+        <img src="/images/ecoplant.avif" alt="Hands holding plant" />
+      </div>
+    </div>
+
+<section className="green-container">
+      <p className="green-subtitle">Beyond Materials</p>
+      <h2 className="green-title">Our Green Practices</h2>
+      <p className="green-desc">
+        Sustainability goes beyond just using eco-friendly materials. Here's how we ensure our entire
+        operation reflects our commitment to the environment.
+      </p>
+
+      <div className="green-grid">
+        {practices.map((practice, index) => (
+          <div className="green-card" key={index}>
+            <div className="green-number">{practice.number}</div>
+            <h3 className="green-card-title">{practice.title}</h3>
+            <p className="green-card-desc">{practice.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section className="impact-stats-section">
+      <h2 className="impact-heading">Our Impact So Far</h2>
+      <p className="impact-subheading">
+        Every jute product makes a difference. Here's the positive impact we've made together.
+      </p>
+
+      <div className="impact-stats-container">
+        <div className="impact-box">
+          <h3>10k+</h3>
+          <p>Plastic Bags Replaced</p>
+        </div>
+        <div className="impact-box">
+          <h3>15+</h3>
+          <p>Local Artisans Employed</p>
+        </div>
+        <div className="impact-box">
+          <h3>500kg</h3>
+          <p>CO₂ Emissions Saved</p>
+        </div>
+        <div className="impact-box">
+          <h3>25+</h3>
+          <p>Eco-Business Partners</p>
+        </div>
+      </div>
+    </section>
+    
+            <footer className="footer">
+          <div className="footer-container">
+    
+            <div className="footer-col">
+              <h3>A Golden Fiber by Rayna</h3>
+              <p>
+                Sustainable jute products handcrafted with care for the environment and your lifestyle.
+              </p>
+            <div className="social-icons">
+              <FaFacebook />
+              <FaInstagram />
+              <FaLinkedin />
+              <FaTwitter />
+              <FaYoutube />
+            </div>
+            </div>
+    
+            <div className="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Our Products</li>
+                <li>Sustainability</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+    
+            <div className="footer-col">
+              <h4>Support</h4>
+              <ul>
+                <li>FAQs</li>
+                <li>Shipping Policy</li>
+                <li>Return Policy</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+    
+            <div className="footer-col">
+              <h4>Contact Us</h4>
+              <p>📞 +91 98220 91610</p>
+              <p>✉️ goldenfiberbyrayna@gmail.com</p>
+              <button className="whatsapp-btn">💬 Chat on WhatsApp</button>
+            </div>
+    
+          </div>
+          <div className="footer-bottom">
+            © 2025 A Golden Fiber by Rayna. All rights reserved.
+          </div>
+        </footer>
+
+    </div>
+  );
+};
+
+export default Sustainability;

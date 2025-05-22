@@ -1,0 +1,406 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+header {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #a50038;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  height: 2.9rem;
+}
+
+.contact-info span {
+  margin-right: 20px;
+}
+
+.social-icons svg {
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: 50px;
+  width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #a50038;
+}
+
+.enquire-btn {
+  border: 1px solid #a50038;
+  background: transparent;
+  color: #a50038;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.enquire-btn:hover {
+  background-color: #a50038;
+  color: white;
+}
+
+/* part 2 */
+
+.hero-section1 {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+  margin: 20px;
+}
+
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  margin-left: 30px;
+  color: rgb(247, 242, 242);
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: red;
+  color: black;
+  cursor: pointer;
+}
+
+.hero-buttons .btn-primary :hover {
+  background-color: red;
+}
+
+
+.hero-content {
+  padding: 20px;
+  
+  color: white;
+  font-size: 32px;
+}
+
+.contact1,
+.contact2 {
+  color: white;
+  
+  font-size: 1rem;
+  max-width: 60%;
+  width: 100%;
+}
+/* part 4 */
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #fbefea;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 20px;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* part 4 */
+.contact-wrapper {
+  position: relative;
+  background-image: url("../assets/con3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh; /* Full screen height for vertical centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  margin: 30px 70px;
+  border-radius: 30px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #000;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  color: black;
+}
+
+input,
+textarea {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.8rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #000;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+
+.sendmsg-btn {
+  border: 1px solid white;
+  background: white;
+  color: black;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 250px;
+  margin-top: 10px;
+}
+.sendmsg-btn :hover {
+    background-color: #a50038;
+    color: #a50038;
+}
+
+/* part 5 */
+.contact-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  background-color: rgb(233, 228, 228);
+  max-width: 1450px;
+  margin: 50px 10px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  margin: 10px;
+}
+
+.contacth1p{
+    text-align: center;
+
+}
+.map-container1 {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+  padding: 10px;
+
+}
+
+.map-container1 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* last part */
+
+.footer {
+  background-color: #fbefea;
+  padding: 50px 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #1d1d1d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  color:#a50038 ;
+}
+
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #a50038;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  background-color: #a50038;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
