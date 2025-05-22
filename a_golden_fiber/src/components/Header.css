@@ -512,7 +512,7 @@ header {
 /* part juteprocess */
 
 .jute-process {
-  padding: 30px 0;
+  padding: 10px 0;
   background-color: #faf7f2;
   color: #333;
   animation: appear linear;
