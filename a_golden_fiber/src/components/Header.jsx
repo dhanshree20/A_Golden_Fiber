@@ -89,7 +89,7 @@ const products = [
     category: "PACKAGING",
     title: "Jute Gift Packaging Set",
     description:
-      "Custom gift wrapping made with natural jute materials, perfect for eco-conscious gifting.",
+      "Custom wrapping made with natural jute materials perfect for gifting.",
     image:
       "/images/jute3.avif",
     label: "Plastic-free",
@@ -114,6 +114,68 @@ const products = [
   },
 ];
 
+const categories = [
+  { name: 'Tote Bag', img: './image/bag1.png' },
+  { name: 'Pouches', img: './image/bag2.png' },
+  { name: 'Binders', img: './image/bag3.png' },
+  { name: 'Green Gifting', img: './image/bag4.png' },
+  { name: 'Gift Hamper', img: './image/bag5.png' },
+  { name: 'Accessories', img: './image/bag6.png' },
+  { name: 'Bottle Bags', img: './image/bag7.png' },
+  { name: 'Corporate Bags', img: './image/bag8.png' }
+];
+
+  const companyimage = [
+    '/jutebag1.jpeg',
+    '/jutebag2.jpeg',
+    '/jutebag3.jpeg',
+    '/jutebag4.jpeg',
+  ];
+
+  const processSteps = [
+    {
+      id: 1,
+      title: "Cultivation",
+      description: "Jute seeds are sown during early summer in warm, humid climates. The plants grow rapidly, reaching over 10 feet tall within 4-5 months.",
+      icon: "🌱"
+    },
+    {
+      id: 2,
+      title: "Harvesting",
+      description: "When mature, plants are cut close to the ground. The stalks are bundled and left in the field for a few days to dry slightly.",
+      icon: "🌾"
+    },
+    {
+      id: 3,
+      title: "Retting",
+      description: "Bundles are submerged in slow-moving water for 2-3 weeks. Microbial action breaks down the plant's soft tissues, separating the long jute fibers.",
+      icon: "💧"
+    },
+    {
+      id: 4,
+      title: "Stripping",
+      description: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days.",
+      icon: "👐"
+    },
+    {
+      id: 5,
+      title: "Processing",
+      description: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products.",
+      icon: "🧺"
+    },
+    {
+      id: 6,
+      title: "Product Manufacturing",
+      description: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans.",
+      icon: "🌍"
+    },
+    {
+      id: 7,
+      title: "Sustainable Impact",
+      description: "Jute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation.",
+      icon: "♻️"
+    }
+  ];
 
   return (
     <header>
@@ -204,6 +266,21 @@ const products = [
       </div>
     </section>
 
+ <section className="categories-section">
+      <h2 className="categories-title">Categories</h2>
+      <div className="categories-container">
+        {categories.map((item, index) => (
+          <div className="category-item" key={index}>
+            <div className="category-image">
+              <img src={item.img} alt={item.name} />
+            </div>
+            <p className="category-name">{item.name}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+
         <div className="products-section">
       <p className="section-label">Our Products</p>
       <h2 className="section-title">Sustainable Jute Essentials</h2>
@@ -237,36 +314,105 @@ const products = [
     </div>
     
 
-    <section className="sustainability-section">
-      <div className="sustainability-left">
-        <p className="section-subtitle">Our Commitment</p>
-        <h2 className="section-title">Sustainability at Every Step</h2>
-        <p className="section-description">
+    <section className="sustainability-container">
+      <div className="sustainability-content">
+        <p className="sustainability-subtitle">Our Commitment</p>
+        <h2 className="sustainability-heading">Sustainability at Every Step</h2>
+        <p className="sustainability-description">
           We believe in creating products that don't just look good, but do good too.
           Every jute item we craft is designed to replace single-use plastic and provide
           a sustainable alternative that's beautiful, functional, and kind to our planet.
         </p>
 
-        <div className="feature-grid">
+        <div className="sustainability-feature-grid">
           {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="icon">{feature.icon}</div>
-              <div>
-                <h4>{feature.title}</h4>
-                <p>{feature.description}</p>
+            <div className="sustainability-feature-card" key={index}>
+              <div className="sustainability-feature-icon">{feature.icon}</div>
+              <div className="sustainability-feature-text">
+                <h4 className="sustainability-feature-title">{feature.title}</h4>
+                <p className="sustainability-feature-description">{feature.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <a href="#" className="learn-more">
+        <a href="#" className="sustainability-link">
           Learn about our sustainability efforts →
         </a>
       </div>
-      <div className="sustainability-right">
-        <img src={bgImage} alt="Ocean background" />
+
+      <div className="sustainability-image-container">
+        <img src={bgImage} alt="Ocean background" className="sustainability-image" />
       </div>
     </section>
+
+ <section className="jute-process">
+      <div className="process-container">
+        <h2>How Jute is Made: From Plant to Product</h2>
+        <p className="process-intro">
+          Jute is an eco-friendly natural fiber known as the "Golden Fiber" due to its color and value.
+          Here's the journey it takes from plant to finished product:
+        </p>
+        
+        <div className="process-timeline">
+          {processSteps.map((step) => (
+            <div key={step.id} className="process-step">
+              <div className="process-icon">{step.icon}</div>
+              <div className="process-content">
+                <h3>{step.id}. {step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="process-conclusion">
+          <h3>Why Jute Matters</h3>
+          <p>By choosing jute, you're supporting sustainable farming, rural artisan employment, and reduction in plastic waste.</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section className="impact-stats-section-new">
+  <div className="impact-content-new">
+    <h2 className="impact-heading-new">Our Impact So Far</h2>
+    <p className="impact-subheading-new">
+      Every jute product makes a difference. Here's the positive impact we've made together.
+    </p>
+
+    <div className="impact-stats-container-new">
+      <div className="impact-box-new">
+        <h3>10k+</h3>
+        <p>Plastic Bags Replaced</p>
+      </div>
+      <div className="impact-box-new">
+        <h3>15+</h3>
+        <p>Local Artisans Employed</p>
+      </div>
+      <div className="impact-box-new">
+        <h3>500kg</h3>
+        <p>CO₂ Emissions Saved</p>
+      </div>
+      <div className="impact-box-new">
+        <h3>25+</h3>
+        <p>Eco-Business Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div className="company-gallery">
+        <h2>Latest Instagram Posts</h2>
+        <div className="image-grid">
+          {companyimage.map((src, index) => (
+            <div className="image-card" key={index}>
+              <img src={src} alt={`Company ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
 
 
 <div className="testimonials-section">

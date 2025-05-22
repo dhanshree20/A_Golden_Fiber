@@ -1,3 +1,15 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 header {
   font-family: Arial, sans-serif;
 }
@@ -78,7 +90,7 @@ header {
 /* src/components/SustainabilityHeader.css */
 
 .sustainability-section {
-  background-color: #f3f1eb;
+  background-color: #fbecec;
   background-image: radial-gradient(#ddd 1px, transparent 1px);
   background-size: 25px 25px;
   padding: 30px 20px;
@@ -109,6 +121,9 @@ header {
   text-align: center;
   padding: 2rem 5rem;
   background-color: #fff;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%
 }
 
 .why-subtitle {
@@ -183,6 +198,9 @@ header {
   background-color: #f8f7f1;
   gap: 2rem;
   flex-wrap: wrap;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%
 }
 
 .eco-text {
@@ -232,6 +250,9 @@ header {
   text-align: center;
   padding: 2rem 7rem;
   background-color: #fff;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%
 }
 
 .green-subtitle {
@@ -305,6 +326,9 @@ header {
   padding: 2rem 2rem;
   text-align: center;
   color: white;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%
 }
 
 .impact-heading {

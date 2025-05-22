@@ -51,6 +51,7 @@ const AboutUs = () => {
                     <Link to = "/about">ABOUT</Link>
                     <Link to = "/product">PRODUCT</Link>
                     <Link to = "/Sustainability">SUSTAINABILITY</Link>
+                    <Link to = "/testimonials">TESTIMONIALS</Link>
                     <Link to = "/contact">CONTACT</Link>
           
                   </nav>
@@ -115,11 +116,11 @@ const AboutUs = () => {
     <section className="founder-section">
       <div className="founder-card">
         <div className="founder-image">
-          <img src="/images/founder.jpg" alt="Founder" />
+          <img src="/images/founderimage.jpeg" alt="Founder" />
         </div>
         <div className="founder-text">
           <p className="founder-label">Founder's Message</p>
-          <h2 className="founder-name">Rayna Krishna</h2>
+          <h2 className="founder-name">Runal</h2>
           <p className="founder-quote">
             <em>
               "I believe that beautiful things shouldn't come at the expense of our planet. Every jute product we create
