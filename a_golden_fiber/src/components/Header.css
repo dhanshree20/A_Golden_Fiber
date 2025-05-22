@@ -711,47 +711,89 @@ header {
 
 /* part companyimages */
 
-.company-gallery {
-  padding: 30px;
+.socialh1 {
+  text-align: center;
+  font-size: 38px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #a50038;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5ee;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-  background-color: #f8fcfe;
-  margin: 20px;
 }
 
-.company-gallery h2 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #a50038;
-}
-
-.image-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-.image-card {
-  width: 100%;
-  max-width: 240px;
-  height: 200px;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  display: flex;
+  background: #fff;
 }
 
-.image-card img {
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.follow-btn {
+  padding: 6px 12px;
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.card-img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
+}
+
+.card-body {
+  padding: 10px 15px;
+}
+
+.reactions {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 15px;
+}
+
+.caption {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
 }
 
 

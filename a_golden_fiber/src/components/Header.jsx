@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 import storyImg from '../assets/about1.avif';
 import bgImage from '../assets/sub6.jpeg';
 import bagImage from "../assets/sub4.avif";
-import profilePic from "../assets/profile.png"; // Replace with your image path
 import { BsPatchCheckFill } from "react-icons/bs";
 
 const Header = () => {
@@ -144,6 +143,42 @@ const categories = [
   { year: "",icon: "🌍", title: "Product Manufacturing", desc: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans."},
   { year: "",icon: "♻️", title: "Sustainable Impact", desc: "ute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation."},
 ];
+
+const posts = [
+  {
+    id: 1,
+    username: "goldenfiberbyrayna",
+    image: "./images/jutebag1.jpeg",
+    likes: 180,
+    comments: 1,
+    caption: "🙌Celebrate International Yoga Day with our jute yoga bags collection, available in diverse sizes and shapes. Choose sustainable fashion and contribute to a better future"
+  },
+  {
+    id: 2,
+    username: "goldenfiberbyrayna",
+    image: "/images/jutebag2.jpeg",
+    likes: 120,
+    comments: 2,
+    caption: "Introducing our red jute bags edition,available in all sizes and customizable too! Ditch plastic and choose sustainability with these eco-friendly, stylish bags. 🙌🎉🌞"
+  },
+  {
+    id: 3,
+    username: "goldenfiberbyrayna",
+    image: "/images/jutebag3.jpeg",
+    likes: 150,
+    comments: 2,
+    caption: "😎 Embrace sustainable fashion with our flashy green edition of jute bags, adorned with our gorgeous brand logo. Perfect for every occasion, these bags are the epitome of classy elegance",
+  },
+  {
+    id: 4,
+    username: "goldenfiberbyrayna",
+    image: "/images/jutebag4.jpeg",
+    likes: 100,
+    comments: 1,
+    caption: "Introducing our Heart Edition Jute Bags with adorable heart designs, perfect gifts for your loved ones. Available in various sizes and shapes like small bags and pouches. Choose sustainable products and make an eco-conscious move for a better future.",
+  },
+];
+
 
   return (
     <header>
@@ -363,16 +398,37 @@ const categories = [
   </div>
 </section>
 
-      <div className="company-gallery">
-        <h2>Latest Instagram Posts</h2>
-        <div className="image-grid">
-          {companyimage.map((src, index) => (
-            <div className="image-card" key={index}>
-              <img src={src} alt={`Company ${index + 1}`} />
+
+<div>
+  <h1 className="socialh1"> Social Feed</h1>
+<div className="card-grid">
+      {posts.map((post) => (
+        <div key={post.id} className="card">
+          <div className="card-header">
+            <div className="user-info">
+              <img src="/images/profile.png" alt="avatar" className="avatar" />
+              <span className="username">{post.username}</span>
             </div>
-          ))}
+            <a 
+            href={`https://www.instagram.com/goldenfiberbyrayna?igsh=MXJva3Jzb3k3bzludw==${post.username}/`} 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <button className="follow-btn">Follow</button>
+          </a>
+          </div>
+          <img src={post.image} alt="post" className="card-img" />
+          <div className="card-body">
+            <div className="reactions">
+              <span>❤️ {post.likes}</span>
+              <span>💬 {post.comments}</span>
+            </div>
+            <p className="caption">{post.caption}</p>
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+    </div>
 
 
 <div className="testimonials-section">
