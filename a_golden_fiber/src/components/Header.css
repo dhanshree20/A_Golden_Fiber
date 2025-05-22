@@ -511,161 +511,137 @@ header {
 
 /* part juteprocess */
 
-.jute-process {
-  padding: 10px 0;
-  background-color: #faf7f2;
-  color: #333;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+.timeline-container {
+  padding: 20px 20px;
+  background-color: #f8f5ee;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  
 }
 
-.process-container {
-  max-width: 1000px;
+.timeline-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #a50038;
+}
+
+.timeline-subheading {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
   margin: 0 auto;
+  max-width: 900px;
   padding: 0 20px;
 }
 
-.jute-process h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #a50038;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.process-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 50px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.process-timeline {
-  position: relative;
-}
-
-.process-timeline::before {
-  content: '';
+.timeline::before {
+  content: "";
   position: absolute;
-  left: 30px;
+  left: 50%;
   top: 0;
-  height: 100%;
+  bottom: 0;
   width: 2px;
-  background-color: #c5b787;
+  background: #c2d4ae;
+  transform: translateX(-50%);
 }
 
-.process-step {
-  display: flex;
-  margin-bottom: 40px;
+.timeline-item {
   position: relative;
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
-.process-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-  z-index: 2;
-  transition: transform 0.3s ease;
+.timeline-item.left {
+  left: 0;
+  text-align: right;
 }
 
-.process-step:hover .process-icon {
-  transform: scale(1.1);
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
 }
 
-.process-content {
-  background-color: #ffffff;
+.timeline-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
   border-radius: 8px;
-  padding: 20px 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  flex: 1;
 }
 
-.process-content h3 {
-  font-family: 'Playfair Display', serif;
-  color: #a50038;
+.timeline-content h3 {
   margin-top: 0;
-  margin-bottom: 10px;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.process-content p {
-  line-height: 1.6;
-  margin: 0;
-  color: #555;
+.timeline-content p {
+  margin: 10px 0 0;
+  color: #444;
 }
 
-.process-conclusion {
-  background-color: #a50038;
+.circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #a50038;
   color: white;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  z-index: 1;
+  font-size: 18px;
 }
 
-.process-conclusion h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 15px;
+.timeline-item.left .circle {
+  left: 420px;
+  right: 500px;
 }
 
-.process-conclusion p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: white;
+.timeline-item.right .circle {
+  left: -30px;
 }
 
-/* Responsive styles */
-@media (min-width: 768px) {
-  .process-timeline::before {
-    left: 50%;
-    transform: translateX(-50%);
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
   }
-  
-  .process-step {
-    flex-direction: row;
-    justify-content: space-between;
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: left;
   }
-  
-  .process-step:nth-child(odd) {
-    flex-direction: row-reverse;
+
+  .timeline-item.right {
+    left: 0;
   }
-  
-  .process-step:nth-child(odd) .process-icon {
-    margin-right: 0;
-    margin-left: 20px;
+
+  .timeline-item.left {
+    left: 0;
   }
-  
-  .process-content {
-    width: calc(50% - 50px);
+
+  .circle {
+    left: 0;
+    transform: translateY(-50%);
   }
-  
-  .process-icon {
-    margin: 0;
+
+  .timeline-item.left .circle,
+  .timeline-item.right .circle {
+    left: -20px;
   }
 }
 
-@media (max-width: 767px) {
-  .jute-process h2 {
-    font-size: 2rem;
-  }
-  
-  .process-timeline::before {
-    left: 30px;
-  }
-}
+
 /* part imapact section */
 
 .impact-stats-section-new {
@@ -736,7 +712,7 @@ header {
 /* part companyimages */
 
 .company-gallery {
-  padding: 20px;
+  padding: 30px;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -757,6 +733,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 10px;
 }
 
 .image-card {
@@ -776,6 +753,8 @@ header {
   height: 100%;
   object-fit: cover;
 }
+
+
 
 /* part 6 */
 
@@ -876,15 +855,24 @@ header {
 
 /* part 7 */
 
-.sustainable-container {
+.sustainable-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
   background-color: #a50038;
   color: white;
-  text-align: center;
-  padding: 60px 20px;
   font-family: "Arial", sans-serif;
+  flex-wrap: wrap;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+}
+
+.sustainable-left {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 30px;
 }
 
 .sustainable-heading {
@@ -895,15 +883,14 @@ header {
 
 .sustainable-subtext {
   font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto 30px;
+  max-width: 600px;
   line-height: 1.6;
-  color: black;
+  margin-bottom: 30px;
+  color: white;
 }
 
 .sustainable-buttons {
   display: flex;
-  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -938,18 +925,16 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-
-/* src/components/ImageRow.css */
-.image-strip-container {
-  background-color: #6c1b1b; /* Same as in the image */
-  padding: 20px;
+.sustainable-right {
+  flex: 1;
+  min-width: 300px;
   display: flex;
   justify-content: center;
 }
 
-.image-strip {
-  width: 90%;
-  max-width: 1200px;
+.sustainable-image {
+  max-width: 70%;
+  height: auto;
   border-radius: 8px;
 }
 

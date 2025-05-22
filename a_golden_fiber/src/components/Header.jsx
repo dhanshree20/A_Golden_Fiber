@@ -5,6 +5,9 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaFacebook, FaInstagr
 import { useState, useEffect } from 'react';
 import storyImg from '../assets/about1.avif';
 import bgImage from '../assets/sub6.jpeg';
+import bagImage from "../assets/sub4.avif";
+import profilePic from "../assets/profile.png"; // Replace with your image path
+import { BsPatchCheckFill } from "react-icons/bs";
 
 const Header = () => {
 
@@ -132,50 +135,15 @@ const categories = [
     '/jutebag4.jpeg',
   ];
 
-  const processSteps = [
-    {
-      id: 1,
-      title: "Cultivation",
-      description: "Jute seeds are sown during early summer in warm, humid climates. The plants grow rapidly, reaching over 10 feet tall within 4-5 months.",
-      icon: "🌱"
-    },
-    {
-      id: 2,
-      title: "Harvesting",
-      description: "When mature, plants are cut close to the ground. The stalks are bundled and left in the field for a few days to dry slightly.",
-      icon: "🌾"
-    },
-    {
-      id: 3,
-      title: "Retting",
-      description: "Bundles are submerged in slow-moving water for 2-3 weeks. Microbial action breaks down the plant's soft tissues, separating the long jute fibers.",
-      icon: "💧"
-    },
-    {
-      id: 4,
-      title: "Stripping",
-      description: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days.",
-      icon: "👐"
-    },
-    {
-      id: 5,
-      title: "Processing",
-      description: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products.",
-      icon: "🧺"
-    },
-    {
-      id: 6,
-      title: "Product Manufacturing",
-      description: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans.",
-      icon: "🌍"
-    },
-    {
-      id: 7,
-      title: "Sustainable Impact",
-      description: "Jute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation.",
-      icon: "♻️"
-    }
-  ];
+ const timelineSteps = [
+  { year: "",icon: "🌱", title: "Cultivation", desc: "Jute seeds are sown during early summer in warm, humid climates. The plants grow rapidly, reaching over 10 feet tall within 4-5 months."},
+  { year: "",icon: "🌾", title: "Harvesting", desc: "When mature, plants are cut close to the ground. The stalks are bundled and left in the field for a few days to dry slightly."},
+  { year: "",icon: "💧", title: "Retting", desc: "Bundles are submerged in slow-moving water for 2-3 weeks. Microbial action breaks down the plant's soft tissues, separating the long jute fibers."},
+  { year: "",icon: "👐", title: "Stripping", desc: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days."},
+  { year: "",icon: "🧺", title: "Processing", desc: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products."},
+  { year: "",icon: "🌍", title: "Product Manufacturing", desc: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans."},
+  { year: "",icon: "♻️", title: "Sustainable Impact", desc: "ute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation."},
+];
 
   return (
     <header>
@@ -346,32 +314,24 @@ const categories = [
       </div>
     </section>
 
- <section className="jute-process">
-      <div className="process-container">
-        <h2>How Jute is Made: From Plant to Product</h2>
-        <p className="process-intro">
-          Jute is an eco-friendly natural fiber known as the "Golden Fiber" due to its color and value.
-          Here's the journey it takes from plant to finished product:
-        </p>
-        
-        <div className="process-timeline">
-          {processSteps.map((step) => (
-            <div key={step.id} className="process-step">
-              <div className="process-icon">{step.icon}</div>
-              <div className="process-content">
-                <h3>{step.id}. {step.title}</h3>
-                <p>{step.description}</p>
-              </div>
+<div className="timeline-container">
+      <h2 className="timeline-heading">How Jute is Made: From Plant to Product</h2>
+      <p className="timeline-subheading">
+        Jute is an eco-friendly natural fiber known as the "Golden Fiber" due to its color and value. Here's the journey it takes from plant to finished product.
+      </p>
+      <div className="timeline">
+        {timelineSteps.map((step, index) => (
+          <div key={index} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
+            <div className="timeline-content">
+              <div className="circle">{step.year}</div>
+              <h3>{step.icon}</h3>
+              <h3>{step.title}</h3>
+              <p>{step.desc}</p>
             </div>
-          ))}
-        </div>
-        
-        <div className="process-conclusion">
-          <h3>Why Jute Matters</h3>
-          <p>By choosing jute, you're supporting sustainable farming, rural artisan employment, and reduction in plastic waste.</p>
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
 
     
 
@@ -439,19 +399,25 @@ const categories = [
       <p className="read-more">Read more testimonials →</p>
     </div>
 
-    <div className="sustainable-container">
-      <h1 className="sustainable-heading">Ready to Make a Sustainable Choice?</h1>
-      <p className="sustainable-subtext">
-        Join us in reducing plastic waste and supporting eco-friendly practices.
-        Explore our jute products or reach out for custom orders.
-      </p>
-      <div className="sustainable-buttons">
-        <Link to="/product">
-        <button className="browse-btn">Browse Products</button>
-        </Link>
-        <Link to="/contact">
-        <button className="contact-btn">Contact Us</button>
-        </Link>
+<div className="sustainable-wrapper">
+      <div className="sustainable-left">
+        <h1 className="sustainable-heading">Ready to Make a Sustainable Choice?</h1>
+        <p className="sustainable-subtext">
+          Join us in reducing plastic waste and supporting eco-friendly practices.
+          Explore our jute products or reach out for custom orders.
+        </p>
+        <div className="sustainable-buttons">
+          <Link to="/product">
+            <button className="browse-btn">Browse Products</button>
+          </Link>
+          <Link to="/contact">
+            <button className="contact-btn">Contact Us</button>
+          </Link>
+        </div>
+      </div>
+
+      <div className="sustainable-right">
+        <img src={bagImage} alt="Sustainable Product" className="sustainable-image" />
       </div>
     </div>
 
