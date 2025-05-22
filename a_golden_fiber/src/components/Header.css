@@ -516,7 +516,9 @@ header {
   background-color: #f8f5ee;
   font-family: "Arial", sans-serif;
   text-align: center;
-  
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .timeline-heading {
