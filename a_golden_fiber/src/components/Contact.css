@@ -124,7 +124,7 @@ header {
 
 .hero-content {
   padding: 20px;
-  
+
   color: white;
   font-size: 32px;
 }
@@ -132,11 +132,12 @@ header {
 .contact1,
 .contact2 {
   color: white;
-  
+
   font-size: 1rem;
   max-width: 60%;
   width: 100%;
 }
+
 /* part 4 */
 
 .contact-info-container {
@@ -186,7 +187,8 @@ p {
   background-image: url("../assets/con2.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh; /* Full screen height for vertical centering */
+  height: 70vh;
+  /* Full screen height for vertical centering */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,7 +207,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  
+
   z-index: 1;
 }
 
@@ -276,9 +278,10 @@ textarea {
   width: 250px;
   margin-top: 10px;
 }
+
 .sendmsg-btn :hover {
-    background-color: #a50038;
-    color: #a50038;
+  background-color: #a50038;
+  color: #a50038;
 }
 
 /* part 5 */
@@ -297,10 +300,11 @@ textarea {
   margin: 10px;
 }
 
-.contacth1p{
-    text-align: center;
+.contacth1p {
+  text-align: center;
 
 }
+
 .map-container1 {
   flex: 1;
   min-width: 300px;
@@ -367,7 +371,7 @@ textarea {
   margin-top: 15px;
   display: flex;
   gap: 10px;
-  color:#a50038 ;
+  color: #a50038;
 }
 
 .icon-circle {

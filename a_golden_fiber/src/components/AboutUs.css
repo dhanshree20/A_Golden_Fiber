@@ -74,8 +74,8 @@ header {
 
 .enquire-btn {
   border: 1px solid #a50038;
-  background: transparent;
-  color: #a50038;
+  background-color: #a50038;
+  color: white;
   padding: 8px 16px;
   font-weight: bold;
   cursor: pointer;
@@ -83,15 +83,16 @@ header {
 }
 
 .enquire-btn:hover {
-  background-color: #a50038;
-  color: white;
+  background-color: white;
+  color: #a50038;
 }
 
 /* part 2 */
 
 /* src/components/AboutSection.css */
 .about-section {
-  background: #fbecec url('/images/bg-dots.png') repeat; /* optional pattern */
+  background: #fbecec url('/images/bg-dot.avif');
+  /* optional pattern */
   padding: 30px 20px;
   text-align: center;
 }
@@ -102,7 +103,8 @@ header {
 }
 
 .subtitle {
-  color: #a50038; /* green shade */
+  color: #a50038;
+  /* green shade */
   font-size: 1.8rem;
   margin-bottom: 2px;
   font-weight: 600;
@@ -111,7 +113,8 @@ header {
 .title {
   font-size: 3rem;
   font-weight: 800;
-  color: #0f172a; /* very dark navy */
+  color: #0f172a;
+  /* very dark navy */
   margin-bottom: 16px;
 }
 
@@ -431,7 +434,7 @@ header {
   margin-top: 15px;
   display: flex;
   gap: 10px;
-  color:#a50038 ;
+  color: #a50038;
 }
 
 .icon-circle {

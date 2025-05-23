@@ -71,19 +71,21 @@ header {
   color: #a50038;
 }
 
-.enquire-btn {
+.enquire-btn20 {
   border: 1px solid #a50038;
-  background: transparent;
-  color: #a50038;
+
+  background-color: #a50038;
+  color: white;
   padding: 8px 16px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 3px;
+  font-family: Arial, sans-serif;
 }
 
-.enquire-btn:hover {
-  background-color: #a50038;
-  color: white;
+.enquire-btn20:hover {
+  background-color: white;
+  color: #a50038;
 }
 
 /* part 2 */
@@ -97,7 +99,7 @@ header {
   padding: 20px;
   color: white;
   transition: background-image 1s ease-in-out;
-  
+
 }
 
 .hero-content6 {
@@ -108,7 +110,7 @@ header {
 .tagline {
   color: white;
   font-weight: 600;
-  
+
   font-size: 20px;
 }
 
@@ -160,17 +162,20 @@ header {
 }
 
 .secondary-btn:hover {
-    background-color: #a50038;
-    color: white;
+  background-color: #a50038;
+  color: white;
 }
+
 .primary-btn:hover,
 .secondary-btn:hover {
   opacity: 0.9;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
   background-color: white;
   color: #a50038;
 }
+
 /* part 3 */
 
 
@@ -405,7 +410,7 @@ header {
   margin-top: 15px;
 }
 
-.learn-btn1:hover{
+.learn-btn1:hover {
   background-color: white;
   color: #a50038;
 }
@@ -516,7 +521,7 @@ header {
   background-color: #f8f5ee;
   font-family: "Arial", sans-serif;
   text-align: center;
- 
+
 }
 
 .timeline-heading {
@@ -660,8 +665,12 @@ header {
 .impact-stats-section-new::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(21, 21, 21, 0.4); /* Transparent dark overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 21, 21, 0.4);
+  /* Transparent dark overlay */
   z-index: 0;
 }
 
@@ -718,6 +727,7 @@ header {
   font-weight: bold;
   color: #a50038;
 }
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -839,7 +849,7 @@ header {
   gap: 20px;
 }
 
-.testimonial-card{
+.testimonial-card {
   background-color: white;
   border-radius: 10px;
   padding: 25px;
@@ -988,7 +998,7 @@ header {
 .footer {
   background-color: #f5f5f0;
   padding: 50px 80px 20px;
-   font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-container {
@@ -1034,7 +1044,7 @@ header {
   margin-top: 15px;
   display: flex;
   gap: 10px;
-  color:#a50038 ;
+  color: #a50038;
 }
 
 .icon-circle {
@@ -1072,4 +1082,3 @@ header {
   border-top: 1px solid #ddd;
   padding-top: 15px;
 }
-

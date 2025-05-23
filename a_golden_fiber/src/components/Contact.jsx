@@ -28,19 +28,19 @@ const Contact = () => {
           <img src="/goldenfiberlogo.png" alt="goldenfiberlogo" />
         </div>
         <nav className="nav-links">
-          <Link to = "/">HOME</Link>
-          <Link to = "/about">ABOUT</Link>
-          <Link to = "/product">PRODUCT</Link>
-          <Link to = "/sustainability">SUSTAINABILITY</Link>
-          <Link to = "/testimonials">TESTIMONIALS</Link>
-          <Link to = "/contact">CONTACT</Link>
+          <Link to="/">HOME</Link>
+          <Link to="/about">ABOUT</Link>
+          <Link to="/product">PRODUCT</Link>
+          <Link to="/sustainability">SUSTAINABILITY</Link>
+          <Link to="/testimonials">TESTIMONIALS</Link>
+          <Link to="/contact">CONTACT</Link>
 
         </nav>
-        <Link to= "/contact">
-        <button className="enquire-btn">ENQUIRE NOW</button>
+        <Link to="/contact">
+          <button className="enquire-btn">ENQUIRE NOW</button>
         </Link>
       </div>
-      
+
 
       <section
         className="hero-section1"
@@ -62,8 +62,8 @@ const Contact = () => {
           <div className="icon">📍</div>
           <h4>India Office </h4>
           <p>Vision International 9, Siddhivinayak Group,
-Golibar Maidan Chowk, MG Rd extn., Camp, Pune 411001,
-Maharashtra, India</p>
+            Golibar Maidan Chowk, MG Rd extn., Camp, Pune 411001,
+            Maharashtra, India</p>
         </div>
 
         <div className="info-card">
@@ -89,104 +89,104 @@ Maharashtra, India</p>
 
 
       <div className="contact-wrapper">
-      <div className="overlay"></div>
-      <div className="contact-container">
-        <div className="form-section">
-          <h2>Send Us a Message</h2>
-          <form className="contact-form">
-            <div className="row">
-              <input type="text" placeholder="Full Name" />
-              <input type="email" placeholder="Email Address" />
-            </div>
-            <div className="row">
-              <input type="text" placeholder="Address" />
-              <input type="text" placeholder="Mobile Number" />
-            </div>
-            <div className="row">
-              <input type="text" placeholder="Subject" />
-            </div>
-            <textarea placeholder="Message"></textarea>
-            <button className="sendmsg-btn">SEND MESSAGE </button>
-          </form>
+        <div className="overlay"></div>
+        <div className="contact-container">
+          <div className="form-section">
+            <h2>Send Us a Message</h2>
+            <form className="contact-form">
+              <div className="row">
+                <input type="text" placeholder="Full Name" />
+                <input type="email" placeholder="Email Address" />
+              </div>
+              <div className="row">
+                <input type="text" placeholder="Address" />
+                <input type="text" placeholder="Mobile Number" />
+              </div>
+              <div className="row">
+                <input type="text" placeholder="Subject" />
+              </div>
+              <textarea placeholder="Message"></textarea>
+              <button className="sendmsg-btn">SEND MESSAGE </button>
+            </form>
+          </div>
+
+
         </div>
-
-
       </div>
-    </div>
 
-<div className='contacth1p'>
-      <h1>Visit Our Studio</h1>
+      <div className='contacth1p'>
+        <h1>Visit Our Studio</h1>
         <p>Drop by our workshop to see our products in person and meet the team.</p>
-      <div className="contact-container1">
-        <div className="map-container1">
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps?q=18.534833,74.131444&z=15&output=embed"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="contact-container1">
+          <div className="map-container1">
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps?q=18.534833,74.131444&z=15&output=embed"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
-</div>
 
 
 
-        <footer className="footer">
-      <div className="footer-container">
+      <footer className="footer">
+        <div className="footer-container">
 
-        <div className="footer-col">
-          <h3>A Golden Fiber by Rayna</h3>
-          <p>
-            Sustainable jute products handcrafted with care for the environment and your lifestyle.
-          </p>
-        <div className="social-icons">
-          <FaFacebook />
-          <FaInstagram />
-          <FaLinkedin />
-          <FaTwitter />
-          <FaYoutube />
+          <div className="footer-col">
+            <h3>A Golden Fiber by Rayna</h3>
+            <p>
+              Sustainable jute products handcrafted with care for the environment and your lifestyle.
+            </p>
+            <div className="social-icons">
+              <FaFacebook />
+              <FaInstagram />
+              <FaLinkedin />
+              <FaTwitter />
+              <FaYoutube />
+            </div>
+          </div>
+
+          <div className="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <Link to="/"><li>Home</li></Link>
+              <Link to="/about"><li>About Us</li></Link>
+              <Link to="/product"><li>Our Products</li></Link>
+              <Link to="/sustainability"><li>Sustainability</li></Link>
+              <Link to="/contact"><li>Contact Us</li></Link>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li>FAQs</li>
+              <li>Shipping Policy</li>
+              <li>Return Policy</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4>Contact Us</h4>
+            <p>📞 +91 98220 91610</p>
+            <p>✉️ goldenfiberbyrayna@gmail.com</p>
+            <button className="whatsapp-btn">💬 Chat on WhatsApp</button>
+          </div>
+
         </div>
+        <div className="footer-bottom">
+          <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+          <p> Designed and Developed by DW Innovation</p>
         </div>
-
-        <div className="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <Link to="/"><li>Home</li></Link> 
-            <Link to="/about"><li>About Us</li></Link>
-            <Link to="/product"><li>Our Products</li></Link>
-            <Link to="/sustainability"><li>Sustainability</li></Link>
-            <Link to="/contact"><li>Contact Us</li></Link>
-          </ul>
-        </div>
-
-        <div className="footer-col">
-          <h4>Support</h4>
-          <ul>
-            <li>FAQs</li>
-            <li>Shipping Policy</li>
-            <li>Return Policy</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-          </ul>
-        </div>
-
-        <div className="footer-col">
-          <h4>Contact Us</h4>
-          <p>📞 +91 98220 91610</p>
-          <p>✉️ goldenfiberbyrayna@gmail.com</p>
-          <button className="whatsapp-btn">💬 Chat on WhatsApp</button>
-        </div>
-
-      </div>
-      <div className="footer-bottom">
-       <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
-      <p> Designed and Developed by DW Innovation</p>
-      </div>
-    </footer>
+      </footer>
     </header>
 
-    
+
   );
 };
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from './components/Header'
 import Contact from './components/Contact'
@@ -11,17 +11,17 @@ function App() {
 
   return (
     <>
-    <Router>
-      
-      <Routes>
-        <Route path="/" Component={Header} />
-        <Route path="/about" Component={About_US} />
-        <Route path="/product" Component={Product} />
-        <Route path='/sustainability' Component={Sustainability} />
-        <Route path="/testimonials" Component={Testimonials} />
-        <Route path = "/contact" Component = {Contact} />
-      </Routes>
-    </Router>
+      <Router>
+
+        <Routes>
+          <Route path="/" Component={Header} />
+          <Route path="/about" Component={About_US} />
+          <Route path="/product" Component={Product} />
+          <Route path='/sustainability' Component={Sustainability} />
+          <Route path="/testimonials" Component={Testimonials} />
+          <Route path="/contact" Component={Contact} />
+        </Routes>
+      </Router>
     </>
   )
 }
