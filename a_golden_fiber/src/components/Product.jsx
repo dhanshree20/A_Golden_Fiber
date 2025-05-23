@@ -18,70 +18,310 @@ const categories = [
 ];
 
 const products = [
-  {
+    {
     id: 1,
-    title: 'Eco-Friendly Jute Tote Bag',
+    title: 'Laminated Jute Bag Multipurpose 4',
     category: 'Tote Bag',
     description: 'Reusable and biodegradable jute tote for everyday shopping.',
     badge: '100% Biodegradable',
-    image: '/tote-bag.jpg'
+    image: '/totebag1.webp'
+  },
+    {
+    id: 2,
+    title: 'Natural non laminated Jute flat bag with handles',
+    category: 'Tote Bag',
+    description: 'Reusable and biodegradable jute tote for everyday shopping.',
+    badge: '100% Biodegradable',
+    image: '/totebag2.webp'
+  },
+    {
+    id: 3,
+    title: 'Jute Wine Bag With Window',
+    category: 'Tote Bag',
+    description: 'Reusable and biodegradable jute tote for everyday shopping.',
+    badge: '100% Biodegradable',
+    image: '/totebag3.webp'
+  },
+    {
+    id: 4,
+    title: 'Laminated Jute Bag Multipurpose 1',
+    category: 'Tote Bag',
+    description: 'Reusable and biodegradable jute tote for everyday shopping.',
+    badge: '100% Biodegradable',
+    image: '/totebag4.webp'
+  },
+    {
+    id: 5,
+    title: 'Laminated Jute Bag Multipurpose 2',
+    category: 'Tote Bag',
+    description: 'Reusable and biodegradable jute tote for everyday shopping.',
+    badge: '100% Biodegradable',
+    image: '/totebag5.webp'
+  },
+    {
+    id: 6,
+    title: 'Laminated Jute Multipurpose Small Tote Bag',
+    category: 'Tote Bag',
+    description: 'Reusable and biodegradable jute tote for everyday shopping.',
+    badge: '100% Biodegradable',
+    image: '/totebag6.webp'
   },
   {
-    id: 2,
+    id: 7,
     title: 'Stylish Jute Pouch',
     category: 'Pouches',
     description: 'Compact pouch perfect for organizing daily essentials.',
     badge: 'Handmade',
-    image: '/pouch.jpg'
+    image: '/pouches1.jpg'
+  },
+    {
+    id: 8,
+    title: 'Natural Color Yoga Print Jute pouch',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches2.jpg'
+  },
+    {
+    id: 9,
+    title: 'Multi color Jute pouch',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches3.jpg'
+  },
+    {
+    id: 10,
+    title: 'Two Color (Natural Brown/ Orange) Jute pouch',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches4.jpg'
+  },
+    {
+    id: 11,
+    title: 'Multi Color Jute Envelope',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches5.jpg'
+  },
+    {
+    id: 12,
+    title: 'Two color Multi shaded Jute pouch',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches6.jpg'
+  },
+{
+    id: 13,
+    title: 'Ivory Color Jute pouch with embroidery lace',
+    category: 'Pouches',
+    description: 'Compact pouch perfect for organizing daily essentials.',
+    badge: 'Handmade',
+    image: '/pouches7.jpg'
   },
   {
-    id: 3,
+    id: 14,
     title: 'Eco Jute Binder',
     category: 'Binders',
     description: 'Perfect eco-alternative for office and school use.',
     badge: 'Recyclable',
-    image: '/binder.jpg'
+    image: '/binders1.png'
   },
   {
-    id: 4,
+    id: 15,
     title: 'Green Gifting Box',
     category: 'Green Gifting',
     description: 'Natural jute gift box perfect for conscious gifting.',
     badge: 'Plastic-Free',
-    image: '/green-gift.jpg'
+    image: '/greengifting1.png'
   },
   {
-    id: 5,
-    title: 'Premium Gift Hamper',
+    id: 16,
+    title: 'Pink Color Organza Gift Hamper Bag',
     category: 'Gift Hamper',
     description: 'Luxury hamper made of jute with artisanal items.',
     badge: 'Curated',
-    image: '/gift-hamper.jpg'
+    image: '/gifthamper1.jpeg'
+  },
+    {
+    id: 17,
+    title: 'Green Color Organza Gift Hamper Bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper2.jpg'
+  },
+    {
+    id: 18,
+    title: 'White Color Organza Gift Hamper Bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper3.jpg'
+  },
+    {
+    id: 19,
+    title: 'Natural Color Organza Gift Hamper Bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper4.jpg'
+  },
+    {
+    id: 20,
+    title: 'Natural and Ivory Color Organza Gift Hamper Bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper5.jpg'
+  },
+    {
+    id: 21,
+    title: 'Pink Color Organza Gift Hamper Bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper6.png'
+  },
+    {
+    id: 22,
+    title: 'Gold Event bag',
+    category: 'Gift Hamper',
+    description: 'Luxury hamper made of jute with artisanal items.',
+    badge: 'Curated',
+    image: '/gifthamper7.png'
   },
   {
-    id: 6,
-    title: 'Jute Plant Holder',
+    id: 23,
+    title: 'Flower Vase',
     category: 'Accessories',
     description: 'Handcrafted holder for your indoor plants.',
     badge: 'Handcrafted',
-    image: '/plant-holder.jpg'
+    image: '/accessories1.jpeg'
+  },
+    {
+    id: 24,
+    title: 'Pen holder',
+    category: 'Accessories',
+    description: 'Handcrafted holder for your indoor plants.',
+    badge: 'Handcrafted',
+    image: '/accessories2.jpeg'
+  },
+    {
+    id: 25,
+    title: 'Table mats and Tea coasters',
+    category: 'Accessories',
+    description: 'Handcrafted holder for your indoor plants.',
+    badge: 'Handcrafted',
+    image: '/accessories3.jpeg'
+  },
+    {
+    id: 26,
+    title: 'Natural Color Basket Jute Accessories',
+    category: 'Accessories',
+    description: 'Handcrafted holder for your indoor plants.',
+    badge: 'Handcrafted',
+    image: '/accessories4.jpeg'
+  },
+    {
+    id: 27,
+    title: 'Natural Color hanging Accessories',
+    category: 'Accessories',
+    description: 'Handcrafted holder for your indoor plants.',
+    badge: 'Handcrafted',
+    image: '/accessories5.jpeg'
+  },
+    {
+    id: 28,
+    title: 'Natural and Black Color Jute disposable Slipper',
+    category: 'Accessories',
+    description: 'Handcrafted holder for your indoor plants.',
+    badge: 'Handcrafted',
+    image: '/accessories6.jpeg'
   },
   {
-    id: 7,
-    title: 'Jute Bottle Bag',
+    id: 29,
+    title: 'Multi Color Bottle bag',
     category: 'Bottle Bags',
     description: 'Reusable bag to carry your bottles in eco-style.',
     badge: 'Reusable',
-    image: '/bottle-bag.jpg'
+    image: '/bottlebag1.jpg'
+  },
+    {
+    id: 30,
+    title: 'Pink Color Jute Bottle bag, Multipurpose bag, Pouch (Set of 3)',
+    category: 'Bottle Bags',
+    description: 'Reusable bag to carry your bottles in eco-style.',
+    badge: 'Reusable',
+    image: '/bottlebag2.jpeg'
+  },
+    {
+    id: 31,
+    title: 'Printed Purple Color Jute Bottle bag, Multipurpose bag, Pouch (Set of 3)',
+    category: 'Bottle Bags',
+    description: 'Reusable bag to carry your bottles in eco-style.',
+    badge: 'Reusable',
+    image: '/bottlebag3.jpeg'
+  },
+    {
+    id: 32,
+    title: 'Jute Wine Bag With Window',
+    category: 'Bottle Bags',
+    description: 'Reusable bag to carry your bottles in eco-style.',
+    badge: 'Reusable',
+    image: '/bottlebag4.png'
   },
   {
-    id: 8,
-    title: 'Corporate Jute Kit',
+    id: 33,
+    title: 'Ivory Color Corporate bag',
     category: 'Corporate Bags',
     description: 'Custom branded jute bag perfect for corporate gifting.',
     badge: 'Customizable',
-    image: '/corporate-bag.jpg'
-  }
+    image: '/corporatebag1.png'
+  },
+    {
+    id: 34,
+    title: 'Ivory Color Corporate bag',
+    category: 'Corporate Bags',
+    description: 'Custom branded jute bag perfect for corporate gifting.',
+    badge: 'Customizable',
+    image: '/corporatebag2.jpg'
+  },
+    {
+    id: 35,
+    title: 'Ivory Color Corporate bag',
+    category: 'Corporate Bags',
+    description: 'Custom branded jute bag perfect for corporate gifting.',
+    badge: 'Customizable',
+    image: '/corporatebag3.jpeg'
+  },
+    {
+    id: 36,
+    title: 'Ivory Color Corporate bag',
+    category: 'Corporate Bags',
+    description: 'Custom branded jute bag perfect for corporate gifting.',
+    badge: 'Customizable',
+    image: '/corporatebag4.png'
+  },
+    {
+    id: 37,
+    title: 'Natural Color Corporate bag',
+    category: 'Corporate Bags',
+    description: 'Custom branded jute bag perfect for corporate gifting.',
+    badge: 'Customizable',
+    image: '/corporatebag5.jpeg'
+  },
+    {
+    id: 38,
+    title: 'Ivory and Black color with Organza Corporate Jute bag',
+    category: 'Corporate Bags',
+    description: 'Custom branded jute bag perfect for corporate gifting.',
+    badge: 'Customizable',
+    image: '/corporatebag6.jpeg'
+  },
 ];
 
 
