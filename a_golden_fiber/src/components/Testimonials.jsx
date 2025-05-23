@@ -2,6 +2,7 @@ import React from 'react';
 import './Testimonials.css';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaWhatsapp, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { useRef } from 'react';
 
 const Testimonials = () => {
 
@@ -43,6 +44,14 @@ const testimonials = [
     message: 'After reviewing dozens of eco-friendly brands, A Golden Fiber stands out for their authentic commitment to sustainability. Their jute totes have replaced all my plastic bags.',
   },
 ];
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 400;
+      scrollRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
   return (
     <div>
     <div className="top-bar">
@@ -77,25 +86,31 @@ const testimonials = [
                                 </Link>
                               </div>
 
-    <section className="testimonial-section">
+ <section className="testimonial-section">
       <h2 className="testimonial-title">What Our Customers Say</h2>
       <p className="testimonial-subtitle">
         Read reviews from individuals and businesses who've experienced the quality and sustainability of our jute products.
       </p>
 
-      <div className="testimonial-grid">
-        {testimonials.map((t, index) => (
-          <div className="testimonial-card" key={index}>
-            <div className="testimonial-header">
-              <img src={t.image} alt={t.name} className="testimonial-img" />
-              <div>
-                <h3 className="testimonial-name">{t.name}</h3>
-                <p className="testimonial-role">{t.title}</p>
+      <div className="testimonial-carousel-wrapper">
+        <button className="carousel-btn left" onClick={() => scroll('left')}>&#10094;</button>
+
+        <div className="testimonial-carousel" ref={scrollRef}>
+          {testimonials.map((t, index) => (
+            <div className="testimonial-card" key={index}>
+              <div className="testimonial-header">
+                <img src={t.image} alt={t.name} className="testimonial-img" />
+                <div>
+                  <h3 className="testimonial-name">{t.name}</h3>
+                  <p className="testimonial-role">{t.title}</p>
+                </div>
               </div>
+              <p className="testimonial-msg">“{t.message}”</p>
             </div>
-            <p className="testimonial-msg">“{t.message}”</p>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <button className="carousel-btn right" onClick={() => scroll('right')}>&#10095;</button>
       </div>
     </section>
 
@@ -119,13 +134,13 @@ const testimonials = [
     
             <div className="footer-col">
               <h4>Quick Links</h4>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Products</li>
-                <li>Sustainability</li>
-                <li>Contact Us</li>
-              </ul>
+          <ul>
+            <Link to="/"><li>Home</li></Link> 
+            <Link to="/about"><li>About Us</li></Link>
+            <Link to="/product"><li>Our Products</li></Link>
+            <Link to="/sustainability"><li>Sustainability</li></Link>
+            <Link to="/contact"><li>Contact Us</li></Link>
+          </ul>
             </div>
     
             <div className="footer-col">
@@ -148,7 +163,8 @@ const testimonials = [
     
           </div>
           <div className="footer-bottom">
-            © 2025 A Golden Fiber by Rayna. All rights reserved.
+           <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+      <p> Designed and Developed by DW Innovation</p>
           </div>
         </footer>
 

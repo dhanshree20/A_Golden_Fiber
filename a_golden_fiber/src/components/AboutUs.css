@@ -58,12 +58,14 @@ header {
   align-items: center;
   flex-grow: 1;
   justify-content: center;
+  font-family: Arial, sans-serif;
 }
 
 .nav-links a {
   text-decoration: none;
   color: rgb(57, 57, 57);
   font-weight: bold;
+  font-weight: Arial, sans-serif;
 }
 
 .nav-links a:hover {
@@ -340,7 +342,7 @@ header {
   color: black;
 }
 
-.sustainable-buttons {
+.sustainable-buttons30 {
   display: flex;
   justify-content: center;
   gap: 20px;

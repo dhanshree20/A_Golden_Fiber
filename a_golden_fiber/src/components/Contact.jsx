@@ -152,11 +152,11 @@ Maharashtra, India</p>
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Products</li>
-            <li>Sustainability</li>
-            <li>Contact Us</li>
+            <Link to="/"><li>Home</li></Link> 
+            <Link to="/about"><li>About Us</li></Link>
+            <Link to="/product"><li>Our Products</li></Link>
+            <Link to="/sustainability"><li>Sustainability</li></Link>
+            <Link to="/contact"><li>Contact Us</li></Link>
           </ul>
         </div>
 
@@ -180,7 +180,8 @@ Maharashtra, India</p>
 
       </div>
       <div className="footer-bottom">
-        © 2025 A Golden Fiber by Rayna. All rights reserved.
+       <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+      <p> Designed and Developed by DW Innovation</p>
       </div>
     </footer>
     </header>

@@ -250,9 +250,9 @@ const posts = [
         <img src={storyImg} alt="Our Story" />
       </div>
       <div className="text-container">
-        <p className="section-title">Our Story</p>
+        <p className="section-title20">Our Story</p>
         <h2>
-          From Jewelry to Sustainable <br />
+          From Jewellery to Sustainable <br />
           Jute Solutions
         </h2>
         <p className="paragraph">
@@ -498,7 +498,7 @@ const posts = [
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-         <Link to="/"><li>Home</li></Link> 
+            <Link to="/"><li>Home</li></Link> 
             <Link to="/about"><li>About Us</li></Link>
             <Link to="/product"><li>Our Products</li></Link>
             <Link to="/sustainability"><li>Sustainability</li></Link>
@@ -526,7 +526,9 @@ const posts = [
 
       </div>
       <div className="footer-bottom">
-        © 2025 A Golden Fiber by Rayna. All rights reserved.
+      <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+      <p> Designed and Developed by DW Innovation</p>
+
       </div>
     </footer>
     </header>

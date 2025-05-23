@@ -1,12 +1,11 @@
-// src/components/AboutSection.js
-import React from 'react';
+import React from "react";
 import './AboutUs.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaWhatsapp, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const AboutUs = () => {
-
-    const values = [
+const About_US =() =>
+{
+        const values = [
   {
     icon: '/icons/sustainability.png',
     title: 'Sustainability',
@@ -26,9 +25,9 @@ const AboutUs = () => {
       'We create meaningful opportunities for artisans and educate consumers about the importance of sustainable choices.',
   },
 ];
-  return (
-<div>
-          <div className="top-bar">
+    return(
+        <div>
+                      <div className="top-bar">
             <div className="contact-info">
               <span>+91 98220 91610 / +968 91116 172</span>
               <span>goldenfiberbyrayna@gmail.com</span>
@@ -142,7 +141,7 @@ const AboutUs = () => {
       <p className="sustainable-subtext">
         Discover our handcrafted jute products or connect with us about custom solutions for your home or business.
       </p>
-      <div className="sustainable-buttons">
+      <div className="sustainable-buttons30">
         <Link to="/product">
         <button className="browse-btn">Explore Products</button>
         </Link>
@@ -173,13 +172,13 @@ const AboutUs = () => {
     
             <div className="footer-col">
               <h4>Quick Links</h4>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Products</li>
-                <li>Sustainability</li>
-                <li>Contact Us</li>
-              </ul>
+          <ul>
+            <Link to="/"><li>Home</li></Link> 
+            <Link to="/about"><li>About Us</li></Link>
+            <Link to="/product"><li>Our Products</li></Link>
+            <Link to="/sustainability"><li>Sustainability</li></Link>
+            <Link to="/contact"><li>Contact Us</li></Link>
+          </ul>
             </div>
     
             <div className="footer-col">
@@ -202,12 +201,12 @@ const AboutUs = () => {
     
           </div>
           <div className="footer-bottom">
-            © 2025 A Golden Fiber by Rayna. All rights reserved.
+            <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+      <p> Designed and Developed by DW Innovation</p>
           </div>
         </footer>
+        </div>
+    )
+}
 
-    </div>
-  );
-};
-
-export default AboutUs;
+export default About_US;

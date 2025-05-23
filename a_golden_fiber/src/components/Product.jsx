@@ -455,7 +455,8 @@ const products = [
 
       </div>
       <div className="footer-bottom">
-        © 2025 A Golden Fiber by Rayna. All rights reserved.
+       <p>  © 2025 A Golden Fiber by Rayna. All rights reserved.</p>
+      <p> Designed and Developed by DW Innovation</p>
       </div>
     </footer>
     </div>

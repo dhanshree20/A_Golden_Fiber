@@ -3,10 +3,10 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css'
 import Header from './components/Header'
 import Contact from './components/Contact'
-import AboutUs from './components/AboutUs';
 import Sustainability from './components/Sustainability';
 import Testimonials from './components/Testimonials';
 import Product from './components/Product';
+import About_US from './components/About_US';
 function App() {
 
   return (
@@ -15,7 +15,7 @@ function App() {
       
       <Routes>
         <Route path="/" Component={Header} />
-        <Route path="/about" Component={AboutUs} />
+        <Route path="/about" Component={About_US} />
         <Route path="/product" Component={Product} />
         <Route path='/sustainability' Component={Sustainability} />
         <Route path="/testimonials" Component={Testimonials} />
