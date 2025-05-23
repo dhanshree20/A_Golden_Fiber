@@ -141,7 +141,7 @@ const Header = () => {
     { year: "", title: "Stripping 👐", desc: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days." },
     { year: "", title: "Processing 🧺", desc: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products." },
     { year: "", title: "Product Manufacturing 🌍", desc: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans." },
-    { year: "", title: "Sustainable Impact ♻️", desc: "ute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation." },
+    { year: "", title: "Sustainable Impact ♻️", desc: "Jute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation." },
   ];
 
   const posts = [
@@ -235,7 +235,7 @@ const Header = () => {
               <Link to="/product">
                 <button className="primary-btn">Explore Products →</button>
               </Link>
-              <Link to="/product">
+              <Link to="/about">
                 <button className="secondary-btn">Our Eco Journey</button>
               </Link>
             </div>
@@ -338,10 +338,11 @@ const Header = () => {
               </div>
             ))}
           </div>
-
-          <a href="#" className="sustainability-link">
+           <Link to="/sustainability">
+          <div className="sustainability-link">
             Learn about our sustainability efforts →
-          </a>
+          </div>
+          </Link>
         </div>
 
         <div className="sustainability-image-container">
@@ -352,7 +353,7 @@ const Header = () => {
       <div className="timeline-container">
         <h2 className="timeline-heading">How Jute is Made: From Plant to Product</h2>
         <p className="timeline-subheading">
-          Jute is an eco-friendly natural fiber known as the "Golden Fiber" due to its color and value. Here's the journey it takes from plant to finished product.
+          Jute is an eco-friendly natural fiber known as the "A Golden Fiber" due to its color and value. Here's the journey it takes from plant to finished product.
         </p>
         <div className="timeline">
           {timelineSteps.map((step, index) => (
@@ -452,7 +453,7 @@ const Header = () => {
             </div>
           ))}
         </div>
-        <p className="read-more">Read more testimonials →</p>
+       <Link to="/testimonials"> <p className="read-more">Read more testimonials →</p></Link>
       </div>
 
       <div className="sustainable-wrapper">
