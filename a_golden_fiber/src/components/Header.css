@@ -516,9 +516,7 @@ header {
   background-color: #f8f5ee;
   font-family: "Arial", sans-serif;
   text-align: center;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+ 
 }
 
 .timeline-heading {
@@ -925,7 +923,7 @@ header {
   margin-bottom: 20px;
 }
 
-.sustainable-subtext {
+.sustainable-subtext20 {
   font-size: 1.2rem;
   max-width: 600px;
   line-height: 1.6;
@@ -937,6 +935,7 @@ header {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-right: 370px;
 }
 
 .browse-btn,

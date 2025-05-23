@@ -135,13 +135,13 @@ const categories = [
   ];
 
  const timelineSteps = [
-  { year: "",icon: "🌱", title: "Cultivation", desc: "Jute seeds are sown during early summer in warm, humid climates. The plants grow rapidly, reaching over 10 feet tall within 4-5 months."},
-  { year: "",icon: "🌾", title: "Harvesting", desc: "When mature, plants are cut close to the ground. The stalks are bundled and left in the field for a few days to dry slightly."},
-  { year: "",icon: "💧", title: "Retting", desc: "Bundles are submerged in slow-moving water for 2-3 weeks. Microbial action breaks down the plant's soft tissues, separating the long jute fibers."},
-  { year: "",icon: "👐", title: "Stripping", desc: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days."},
-  { year: "",icon: "🧺", title: "Processing", desc: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products."},
-  { year: "",icon: "🌍", title: "Product Manufacturing", desc: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans."},
-  { year: "",icon: "♻️", title: "Sustainable Impact", desc: "ute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation."},
+  { year: "", title: "Cultivation 🌱", desc: "Jute seeds are sown during early summer in warm, humid climates. The plants grow rapidly, reaching over 10 feet tall within 4-5 months."},
+  { year: "", title: "Harvesting 🌾", desc: "When mature, plants are cut close to the ground. The stalks are bundled and left in the field for a few days to dry slightly."},
+  { year: "", title: "Retting 💧", desc: "Bundles are submerged in slow-moving water for 2-3 weeks. Microbial action breaks down the plant's soft tissues, separating the long jute fibers."},
+  { year: "", title: "Stripping 👐", desc: "Farmers strip the softened stalks by hand to extract the fibers. The fibers are then washed and hung in the sun to dry for several days."},
+  { year: "", title: "Processing 🧺", desc: "The dried fibers are sent to jute mills where they're sorted by quality, softened, carded, spun into threads, and woven into various products."},
+  { year: "", title: "Product Manufacturing 🌍", desc: "The woven jute fabric is used to make eco-friendly items like tote bags, gift bags, pouches, binders, and decorative items - often handcrafted by artisans."},
+  { year: "", title: "Sustainable Impact ♻️", desc: "ute is 100% biodegradable, absorbs CO₂ faster than most trees, and requires minimal pesticides during cultivation."},
 ];
 
 const posts = [
@@ -149,32 +149,32 @@ const posts = [
     id: 1,
     username: "goldenfiberbyrayna",
     image: "./images/jutebag1.jpeg",
-    likes: 180,
-    comments: 1,
+    likes: "",
+    comments: "",
     caption: "🙌Celebrate International Yoga Day with our jute yoga bags collection, available in diverse sizes and shapes. Choose sustainable fashion and contribute to a better future"
   },
   {
     id: 2,
     username: "goldenfiberbyrayna",
     image: "/images/jutebag2.jpeg",
-    likes: 120,
-    comments: 2,
+    likes: "",
+    comments: "",
     caption: "Introducing our red jute bags edition,available in all sizes and customizable too! Ditch plastic and choose sustainability with these eco-friendly, stylish bags. 🙌🎉🌞"
   },
   {
     id: 3,
     username: "goldenfiberbyrayna",
     image: "/images/jutebag3.jpeg",
-    likes: 150,
-    comments: 2,
+    likes: "",
+    comments: "",
     caption: "😎 Embrace sustainable fashion with our flashy green edition of jute bags, adorned with our gorgeous brand logo. Perfect for every occasion, these bags are the epitome of classy elegance",
   },
   {
     id: 4,
     username: "goldenfiberbyrayna",
     image: "/images/jutebag4.jpeg",
-    likes: 100,
-    comments: 1,
+    likes: "",
+    comments: "",
     caption: "Introducing our Heart Edition Jute Bags with adorable heart designs, perfect gifts for your loved ones. Available in various sizes and shapes like small bags and pouches. Choose sustainable products and make an eco-conscious move for a better future.",
   },
 ];
@@ -458,7 +458,7 @@ const posts = [
 <div className="sustainable-wrapper">
       <div className="sustainable-left">
         <h1 className="sustainable-heading">Ready to Make a Sustainable Choice?</h1>
-        <p className="sustainable-subtext">
+        <p className="sustainable-subtext20">
           Join us in reducing plastic waste and supporting eco-friendly practices.
           Explore our jute products or reach out for custom orders.
         </p>
@@ -498,11 +498,11 @@ const posts = [
         <div className="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Products</li>
-            <li>Sustainability</li>
-            <li>Contact Us</li>
+         <Link to="/"><li>Home</li></Link> 
+            <Link to="/about"><li>About Us</li></Link>
+            <Link to="/product"><li>Our Products</li></Link>
+            <Link to="/sustainability"><li>Sustainability</li></Link>
+            <Link to="/contact"><li>Contact Us</li></Link>
           </ul>
         </div>
 
