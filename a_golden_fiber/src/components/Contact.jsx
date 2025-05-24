@@ -140,7 +140,7 @@ const Contact = () => {
             <p>
               Sustainable jute products handcrafted with care for the environment and your lifestyle.
             </p>
-            <div className="social-icons">
+            <div className="social-icons50">
               <FaFacebook />
               <FaInstagram />
               <FaLinkedin />

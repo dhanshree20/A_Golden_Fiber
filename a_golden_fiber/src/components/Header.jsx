@@ -222,11 +222,14 @@ const Header = () => {
         >
           <div className="hero-content6">
 
-            <h1>
-              Sustainable Jute <br />
-              Products for a <span className="green">Greener</span>{' '}
-              <span className="yellow">Future</span>
-            </h1>
+           <h1>
+    <div >Sustainable Jute</div>
+    <div>Products for a</div>
+    <div>
+      <span className="green">Greener </span>
+      <span className="yellow">Future</span>
+    </div>
+  </h1>
             <p className="description1">
               Handcrafted eco-friendly jute products made by local artisans. <br />
               Each purchase supports sustainable practices and empowers communities.
@@ -269,19 +272,21 @@ const Header = () => {
         </div>
       </section>
 
-      <section className="categories-section">
-        <h2 className="categories-title">Categories</h2>
-        <div className="categories-container">
-          {categories.map((item, index) => (
+<section className="categories-section">
+      <h2 className="categories-title">Categories</h2>
+      <div className="scroll-wrapper">
+        <div className="categories-scroll">
+          {[...categories, ...categories].map((item, index) => (
             <div className="category-item" key={index}>
               <div className="category-image">
                 <img src={item.img} alt={item.name} />
+                <div className="category-name">{item.name}</div>
               </div>
-              <p className="category-name">{item.name}</p>
             </div>
           ))}
         </div>
-      </section>
+      </div>
+    </section>
 
 
       <div className="products-section">
@@ -421,7 +426,7 @@ const Header = () => {
               <img src={post.image} alt="post" className="card-img" />
               <div className="card-body">
                 <div className="reactions">
-                  <span>❤️ {post.likes}</span>
+                  <span>🤍 {post.likes}</span>
                   <span>💬 {post.comments}</span>
                 </div>
                 <p className="caption">{post.caption}</p>
@@ -487,7 +492,7 @@ const Header = () => {
             <p>
               Sustainable jute products handcrafted with care for the environment and your lifestyle.
             </p>
-            <div className="social-icons">
+            <div className="social-icons50">
               <FaFacebook />
               <FaInstagram />
               <FaLinkedin />

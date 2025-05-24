@@ -367,14 +367,14 @@ textarea {
   text-decoration: underline;
 }
 
-.social-icons {
+.social-icons50 {
   margin-top: 15px;
   display: flex;
   gap: 10px;
   color: #a50038;
 }
 
-.icon-circle {
+.icon-circle50 {
   width: 35px;
   height: 35px;
   border-radius: 50%;

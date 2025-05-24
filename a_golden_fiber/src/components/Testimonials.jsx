@@ -2,7 +2,7 @@ import React from 'react';
 import './Testimonials.css';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaWhatsapp, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { useRef } from 'react';
+import { useRef , useEffect} from 'react';
 
 const Testimonials = () => {
 
@@ -46,12 +46,26 @@ const Testimonials = () => {
   ];
   const scrollRef = useRef(null);
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = 400;
-      scrollRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
-    }
-  };
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    const scrollAmount = 1;
+
+    const interval = setInterval(() => {
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += scrollAmount;
+
+        // Reset to start when scrolled to end
+        if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+          scrollContainer.scrollWidth
+        ) {
+          scrollContainer.scrollLeft = 0;
+        }
+      }
+    }, 20); // Adjust speed here
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
       <div className="top-bar">
@@ -86,34 +100,29 @@ const Testimonials = () => {
         </Link>
       </div>
 
-      <section className="testimonial-section">
-        <h2 className="testimonial-title">What Our Customers Say</h2>
-        <p className="testimonial-subtitle">
-          Read reviews from individuals and businesses who've experienced the quality and sustainability of our jute products.
-        </p>
+          <section className="testimonial-section">
+      <h2 className="testimonial-title">What Our Customers Say</h2>
+      <p className="testimonial-subtitle">
+        Read reviews from individuals and businesses who've experienced the quality and sustainability of our jute products.
+      </p>
 
-        <div className="testimonial-carousel-wrapper">
-          <button className="carousel-btn left" onClick={() => scroll('left')}>&#10094;</button>
-
-          <div className="testimonial-carousel" ref={scrollRef}>
-            {testimonials.map((t, index) => (
-              <div className="testimonial-card" key={index}>
-                <div className="testimonial-header">
-                  <img src={t.image} alt={t.name} className="testimonial-img" />
-                  <div>
-                    <h3 className="testimonial-name">{t.name}</h3>
-                    <p className="testimonial-role">{t.title}</p>
-                  </div>
+      <div className="testimonial-carousel-wrapper">
+        <div className="testimonial-carousel" ref={scrollRef}>
+          {[...testimonials, ...testimonials].map((t, index) => (
+            <div className="testimonial-card" key={index}>
+              <div className="testimonial-header">
+                <img src={t.image} alt={t.name} className="testimonial-img" />
+                <div>
+                  <h3 className="testimonial-name">{t.name}</h3>
+                  <p className="testimonial-role">{t.title}</p>
                 </div>
-                <p className="testimonial-msg">“{t.message}”</p>
               </div>
-            ))}
-          </div>
-
-          <button className="carousel-btn right" onClick={() => scroll('right')}>&#10095;</button>
+              <p className="testimonial-msg">“{t.message}”</p>
+            </div>
+          ))}
         </div>
-      </section>
-
+      </div>
+    </section>
 
       <footer className="footer">
         <div className="footer-container">
@@ -123,7 +132,7 @@ const Testimonials = () => {
             <p>
               Sustainable jute products handcrafted with care for the environment and your lifestyle.
             </p>
-            <div className="social-icons">
+            <div className="social-icons50">
               <FaFacebook />
               <FaInstagram />
               <FaLinkedin />

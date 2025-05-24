@@ -115,17 +115,21 @@ header {
 }
 
 .hero-content6 h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   color: white;
 }
 
 .green {
-  color: #a50038;
+  color: #d9c57c;
+  font-size: 60px;
+  font-family:cursive;
 }
 
 .yellow {
   color: #d9c57c;
+   font-size: 60px;
+   font-family:cursive;
 }
 
 .description1 {
@@ -164,6 +168,7 @@ header {
 .secondary-btn:hover {
   background-color: #a50038;
   color: white;
+  border: none;
 }
 
 .primary-btn:hover,
@@ -246,9 +251,6 @@ header {
   text-align: center;
   padding: 3rem 2rem;
   background-color: #fff;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 
 .categories-title {
@@ -258,11 +260,15 @@ header {
   margin-bottom: 2rem;
 }
 
-.categories-container {
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.categories-scroll {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  gap: 3.5rem;
+  animation: scrollLeft 30s linear infinite;
 }
 
 .category-item {
@@ -270,17 +276,20 @@ header {
   flex-direction: column;
   align-items: center;
   width: 130px;
+  flex-shrink: 0;
 }
 
 .category-image {
-  background-color: #f8d6d6;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
+  position: relative;
+  background-color:#f8d6d6 ;
+  width: 160px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+  border-radius: 8px;
 }
 
 .category-image img {
@@ -289,9 +298,25 @@ header {
 }
 
 .category-name {
-  margin-top: 0.8rem;
-  font-size: 1.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 0;
+  text-align: center;
   font-weight: 500;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 
@@ -1036,18 +1061,19 @@ header {
   cursor: pointer;
 }
 
-.footer-col ul li:hover {
-  text-decoration: underline;
-}
 
-.social-icons {
+.social-icons50 {
   margin-top: 15px;
   display: flex;
   gap: 10px;
   color: #a50038;
 }
 
-.icon-circle {
+.social-icons:hover {
+  color: white;
+}
+
+.icon-circle50 {
   width: 35px;
   height: 35px;
   border-radius: 50%;
