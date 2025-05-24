@@ -259,7 +259,7 @@ const Header = () => {
             Jute Solutions
           </h2>
           <p className="paragraph">
-            A Golden Fiber by Rayna began with a simple idea: to create beautiful products that honor our planet. Our journey started in jewelry design, but evolved when we discovered the incredible potential of jute—a natural, renewable fiber that’s both versatile and eco-friendly.
+            A Golden Fiber by Rayna began with a simple idea: to create beautiful products that honor our planet. Our journey started in jewellery design, but evolved when we discovered the incredible potential of jute—a natural, renewable fiber that’s both versatile and eco-friendly.
           </p>
           <p className="paragraph">
             Today, we collaborate with local artisans to create handcrafted jute products that replace plastic alternatives in everyday life, while supporting sustainable livelihoods in our community.

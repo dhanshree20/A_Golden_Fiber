@@ -64,7 +64,7 @@ const About_US = () => {
           <p className="subtitle">Our Story</p>
           <h2 className="title">From Passion to Purpose</h2>
           <p className="description">
-            Discover how A Golden Fiber transformed from a jewelry business into a
+            Discover how A Golden Fiber transformed from a jewellery business into a
             champion for sustainable jute alternatives.
           </p>
         </div>
@@ -76,10 +76,10 @@ const About_US = () => {
           <div className="text-content">
             <h2>The Journey Behind A Golden Fiber</h2>
             <p>
-              A Golden Fiber began with a simple realization: the jewelry industry, like many others, contributed significantly to plastic waste through its packaging and presentation materials.
+              A Golden Fiber began with a simple realization: the jewellery industry, like many others, contributed significantly to plastic waste through its packaging and presentation materials.
             </p>
             <p>
-              What started as a search for better packaging for our own jewelry line soon evolved into a dedicated mission to provide eco-friendly alternatives across industries. We discovered jute—a remarkable natural fiber that's renewable, biodegradable, and incredibly versatile.
+              What started as a search for better packaging for our own jewellery line soon evolved into a dedicated mission to provide eco-friendly alternatives across industries. We discovered jute—a remarkable natural fiber that's renewable, biodegradable, and incredibly versatile.
             </p>
             <p>
               Today, our team works closely with skilled artisans to transform this golden fiber into beautiful, functional products that help individuals and businesses reduce their environmental footprint without sacrificing quality or aesthetics.
