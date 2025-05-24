@@ -525,7 +525,7 @@ header {
 }
 
 .sustainability-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .sustainability-image-container {
@@ -1060,7 +1060,10 @@ header {
   color: #333;
   cursor: pointer;
 }
-
+.footer-col ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .social-icons50 {
   margin-top: 15px;

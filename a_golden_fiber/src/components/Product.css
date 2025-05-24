@@ -260,6 +260,10 @@ header {
 .footer-col ul li:hover {
   text-decoration: underline;
 }
+.footer-col ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .social-icons50 {
   margin-top: 15px;

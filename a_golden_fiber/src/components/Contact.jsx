@@ -151,13 +151,14 @@ const Contact = () => {
 
           <div className="footer-col">
             <h4>Quick Links</h4>
-            <ul>
-              <Link to="/"><li>Home</li></Link>
-              <Link to="/about"><li>About Us</li></Link>
-              <Link to="/product"><li>Our Products</li></Link>
-              <Link to="/sustainability"><li>Sustainability</li></Link>
-              <Link to="/contact"><li>Contact Us</li></Link>
-            </ul>
+<ul>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/about">About Us</Link></li>
+  <li><Link to="/product">Our Products</Link></li>
+  <li><Link to="/sustainability">Sustainability</Link></li>
+  <li><Link to="/contact">Contact Us</Link></li>
+</ul>
+
           </div>
 
           <div className="footer-col">
